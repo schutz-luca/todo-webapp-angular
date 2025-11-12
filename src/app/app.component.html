@@ -1,8 +1,15 @@
 
-<div class="theme-switcher">
-  <button (click)="toggleTheme()">
-    {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
-  </button>
+<div *ngIf="isLoading" class="loading-overlay">
+  <div class="loading-spinner"></div>
+  <span>Loading...</span>
 </div>
 
-<router-outlet></router-outlet>
+<div class="app-container">
+  <div class="theme-switcher">
+    <button (click)="toggleTheme()">
+      {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+    </button>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
