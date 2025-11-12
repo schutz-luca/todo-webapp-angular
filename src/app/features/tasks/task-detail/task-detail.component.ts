@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { TasksService } from '../../../core/services/tasks.service';
 import { Task } from '../../../core/models/task.model';
 import { Observable } from 'rxjs';
+import { taskStatusFormatter } from 'src/app/utils/task-status.formatter';
 
 @Component({
   selector: 'app-task-detail',
@@ -12,6 +13,7 @@ import { Observable } from 'rxjs';
 })
 export class TaskDetailComponent implements OnInit {
   task$!: Observable<Task>;
+    taskStatusFormatter = taskStatusFormatter;
 
   constructor(
     private route: ActivatedRoute,

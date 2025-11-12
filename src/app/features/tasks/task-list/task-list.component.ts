@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { TasksService } from '../../../core/services/tasks.service';
 import { Task } from '../../../core/models/task.model';
 import { Observable } from 'rxjs';
+import { taskStatusFormatter } from 'src/app/utils/task-status.formatter';
 
 @Component({
   selector: 'app-task-list',
@@ -11,6 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class TaskListComponent implements OnInit {
   tasks$!: Observable<Task[]>;
+  taskStatusFormatter = taskStatusFormatter;
 
   constructor(private tasksService: TasksService) { }
 

@@ -1,9 +1,8 @@
-
 <div class="task-detail-container" *ngIf="task$ | async as task">
   <div class="task-detail-card glass-card">
     <div class="task-detail-header">
       <h1>{{ task.title }}</h1>
-      <span class="task-status">{{ task.status }}</span>
+      <span class="task-status">{{ taskStatusFormatter[task.status] }}</span>
     </div>
     <p>{{ task.description }}</p>
     <div class="task-detail-actions">

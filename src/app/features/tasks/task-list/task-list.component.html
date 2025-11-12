@@ -5,7 +5,7 @@
     <div *ngFor="let task of tasks$ | async" class="task-card glass-card">
       <div class="task-card-header">
         <h2>{{ task.title }}</h2>
-        <span class="task-status">{{ task.status }}</span>
+        <span class="task-status">{{ taskStatusFormatter[task.status] }}</span>
       </div>
       <p>{{ task.description }}</p>
       <div class="task-card-actions">
