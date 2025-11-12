@@ -5,12 +5,14 @@
   --font-family: 'Roboto', sans-serif;
 
   --light-bg: #f0f2f5;
+  --light-gradient: linear-gradient(135deg, #f0f2f5 0%, #cbdbf1 100%);
   --light-card-bg: rgba(255, 255, 255, 0.6);
   --light-text: #333;
   --light-border: rgba(255, 255, 255, 0.2);
   --light-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
   --dark-bg: #1a1a1a;
+  --dark-gradient: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
   --dark-card-bg: rgba(40, 40, 40, 0.6);
   --dark-text: #f0f2f5;
   --dark-border: rgba(255, 255, 255, 0.1);
@@ -22,16 +24,19 @@
 
 body {
   font-family: var(--font-family);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+  min-height: 100vh; /* Ensure body takes full viewport height for gradient */
 }
 
 body.light-mode {
   background-color: var(--light-bg);
+  background-image: var(--light-gradient);
   color: var(--light-text);
 }
 
 body.dark-mode {
   background-color: var(--dark-bg);
+  background-image: var(--dark-gradient);
   color: var(--dark-text);
 }
 
