@@ -1,6 +1,6 @@
-# ===========================
+# ==================
 # Angular / Node.js
-# ===========================
+# ==================
 
 # Node dependencies
 /node_modules/
@@ -13,9 +13,9 @@
 # Uncomment if you don’t want local env files in Git
 # /src/environments/environment*.ts
 
-# ===========================
+# ==================
 # IDEs and Editors
-# ===========================
+# ==================
 
 # VS Code
 .vscode/*
@@ -31,47 +31,47 @@
 *.sublime-project
 *.sublime-workspace
 
-# ===========================
+# ==================
 # Logs and Diagnostics
-# ===========================
+# ==================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# ===========================
+# ==================
 # OS / System Files
-# ===========================
+# ==================
 .DS_Store
 Thumbs.db
 
-# ===========================
+# ==================
 # Temporary files
-# ===========================
+# ==================
 /tmp/
 /temp/
 /coverage/
 
-# ===========================
+# ==================
 # Environment and runtime
-# ===========================
+# ==================
 src/environments/*
 
 # Angular cache and analytics
 .angular/cache/
 .angular/local/
 
-# ===========================
+# ==================
 # Compiled output and testing
-# ===========================
+# ==================
 /*.js
 /*.map
 /testem.log
 /junit.xml
 
-# ===========================
+# ==================
 # Misc
-# ===========================
+# ==================
 /package-lock.json
 # If you prefer to lock deps, comment the line above

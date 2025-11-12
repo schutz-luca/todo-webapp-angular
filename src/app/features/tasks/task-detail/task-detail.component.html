@@ -1,14 +1,26 @@
 <div class="task-detail-container" *ngIf="task$ | async as task">
   <div class="task-detail-card glass-card">
     <div class="task-detail-header">
-      <h1>{{ task.title }}</h1>
-      <span class="task-status">{{ taskStatusFormatter[task.status] }}</span>
+      <h1 [class.task-done]="task.status === 'DONE'">{{ task.title }}</h1>
+      <span
+        class="badge"
+        [ngClass]="{
+          'badge-pending': task.status === 'TO_DO',
+          'badge-in-progress': task.status === 'DOING',
+          'badge-done': task.status === 'DONE'
+        }"
+        >{{ taskStatusFormatter[task.status] }}</span
+      >
     </div>
     <p>{{ task.description }}</p>
     <div class="task-detail-actions">
-      <a [routerLink]="['/tasks', task.id, 'edit']">Edit</a>
-      <button (click)="deleteTask(task.id)">Delete</button>
-      <a routerLink="/tasks">Back to List</a>
+      <a class="edit-button" [routerLink]="['/tasks', task.id, 'edit']"
+        ><i class="fas fa-edit"></i> Edit</a
+      >
+      <button class="delete-button" (click)="deleteTask(task.id)">
+        <i class="fas fa-trash"></i> Delete
+      </button>
+      <a routerLink="/tasks"><i class="fas fa-arrow-left"></i> Back to List</a>
     </div>
   </div>
 </div>
