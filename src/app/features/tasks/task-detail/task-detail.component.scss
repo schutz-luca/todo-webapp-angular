@@ -36,43 +36,5 @@
   .task-detail-actions {
     display: flex;
     gap: 1rem;
-
-    a, button {
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    a {
-      background-color: transparent;
-      color: var(--light-text);
-      border: 1px solid var(--light-border);
-
-      body.dark-mode & {
-        color: var(--dark-text);
-        border-color: var(--dark-border);
-      }
-
-      &:hover {
-        background-color: #f0f0f0;
-
-        body.dark-mode & {
-          background-color: #333;
-        }
-      }
-    }
-
-    button {
-      background-color: #dc3545;
-      color: white;
-      border: none;
-
-      &:hover {
-        background-color: #c82333;
-      }
-    }
   }
 }

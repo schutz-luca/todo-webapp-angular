@@ -11,10 +11,10 @@
       <div class="task-card-actions">
         <a [routerLink]="['/tasks', task.id]">View</a>
         <a [routerLink]="['/tasks', task.id, 'edit']">Edit</a>
-        <button (click)="deleteTask(task.id)">Delete</button>
+        <button class="delete-button" (click)="deleteTask(task.id)">Delete</button>
       </div>
     </div>
   </div>
 </div>
 
-<a routerLink="/tasks/create" class="fab">+</a>
+<a routerLink="/tasks/create" class="create-task">+</a>

@@ -19,8 +19,8 @@
       </select>
     </div>
     <div class="form-actions">
-      <button type="submit" [disabled]="taskForm.invalid">{{ isEditMode ? 'Update' : 'Create' }}</button>
       <a routerLink="/tasks">Cancel</a>
+      <button type="submit" [disabled]="taskForm.invalid">{{ isEditMode ? 'Update' : 'Create' }}</button>
     </div>
   </form>
 </div>
