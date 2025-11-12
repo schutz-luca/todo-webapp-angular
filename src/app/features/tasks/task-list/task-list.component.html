@@ -1,0 +1,20 @@
+
+<div class="task-list-container">
+  <h1>Tasks</h1>
+  <div class="task-grid">
+    <div *ngFor="let task of tasks$ | async" class="task-card glass-card">
+      <div class="task-card-header">
+        <h2>{{ task.title }}</h2>
+        <span class="task-status">{{ task.status }}</span>
+      </div>
+      <p>{{ task.description }}</p>
+      <div class="task-card-actions">
+        <a [routerLink]="['/tasks', task.id]">View</a>
+        <a [routerLink]="['/tasks', task.id, 'edit']">Edit</a>
+        <button (click)="deleteTask(task.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a routerLink="/tasks/create" class="fab">+</a>
