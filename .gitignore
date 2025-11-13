@@ -56,7 +56,7 @@ Thumbs.db
 # ==================
 # Environment and runtime
 # ==================
-# src/environments/*
+src/environments/*
 
 # Angular cache and analytics
 .angular/cache/
