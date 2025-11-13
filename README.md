@@ -1,7 +1,6 @@
 # 📝 ToDo List - WebApp (Angular)
 
-A modern **Angular** web application for managing your daily tasks, built with scalability, clean architecture, and responsiveness.  
-It was created to integrate with **[ToDo - API (ASP.NET)](https://github.com/schutz-luca/todo-api-dotnet)** as backend.
+A modern **Angular** web application for managing your daily tasks, built with scalability, clean architecture, and responsiveness.
 
 ---
 
