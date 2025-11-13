@@ -9,4 +9,4 @@ export const environment = {
 `;
 
 writeFileSync(targetPath, envConfigFile);
-console.log(`✅ Environment file generated at ${targetPath}`);
+console.log(`✅ Environment file generated at ${targetPath}. Using API URL: ${process.env["apiUrl"]}`);
