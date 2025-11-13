@@ -15,6 +15,24 @@ It was created to integrate with **[ToDo - API (ASP.NET)](https://github.com/sch
 
 ---
 
+## 🔗 Integration with the .NET API
+
+This Angular app is designed to work with the companion backend repository:  
+👉 **[ToDo API (ASP.NET)](https://github.com/schutz-luca/todo-api-dotnet)**
+
+---
+
+## 🔄 CI/CD
+
+This project implements a robust CI/CD (Continuous Integration/Continuous Deployment) pipeline using **GitHub Actions** and **Vercel**.
+
+- **GitHub Actions**: Automates the build, test, and linting processes for every push and pull request, ensuring code quality and stability.
+- **Vercel**: Automatically deploys the application from the `main` branch, providing instant access to the latest version through a live URL.
+
+This setup guarantees that the deployed application is always up-to-date with the latest stable changes.
+
+---
+
 ## 📁 Folder Structure
 
 ```
@@ -70,13 +88,6 @@ Before starting, make sure you have:
 
 4. **Open the browser**
    Then navigate to **[http://localhost:4200](http://localhost:4200)**
-
----
-
-## 🔗 Integration with the .NET API
-
-This Angular app is designed to work with the companion backend repository:  
-👉 **[ToDo API (ASP.NET)](https://github.com/schutz-luca/todo-api-dotnet)**
 
 ---
 
